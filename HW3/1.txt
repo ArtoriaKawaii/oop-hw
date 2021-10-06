@@ -1,0 +1,42 @@
+Define a class for rational numberd.
+Represent rational numbers as two type values of type int, one for the numerator and one for the denominator.
+Call the class Rational.
+Include a constructor with two arguments that can be used to set the member variables of an object to any legitimate values.
+Also include a constructor that has only a single parameter of type int; call this single parameter wholeNumber/1.
+Include a default constructor that initializes an object to 0(that is, to 0/1).
+Overload the input and output operators >> and <<.
+Note that the numerator, the denominator, or both may contain a minus sign.
+Overload all the following operators so that they correctly apply to the type Rational: ==, <, <=, >, >=, +, -, *, and /.
+Write a test program to test your class.
+
+The code test rules are as follows:
+
+Enter a sequence of rational numbers S = {s1, s2, ..., si, ... sk}, i < k, k is a natural number, and form a new sequence S' by:
+
+S' = {s1', s2', ..., si', ..., sk'}, si' = p*si+q, i<k, k is a natural number, and p, q is a rational number
+
+
+And sort S' into ascending order
+
+
+So we have to enter k, p, q, then enter the sequence S, and finally output the sort result. Each input and output must be wrapped.
+
+Note:
+
+1. When displaying rational numbers, the minus sign is always placed on the numerator(分子) and can't be place on the denominator(分母).
+
+2. If the rational number entered is 0 or the denominator, the numerator and denominator must be set to 0.
+
+3. If the denominator of the rational number is 1, please display only the molecules when outputting.
+
+4. If there is a non-conforming entry, you must print -1 and end the program.
+
+5. Please implement each of the above mentioned operators, otherwise you will not get the score.
+
+
+Hint:
+
+Two rational numbers a/b and c/d are equal if a*d equals to c*b.
+If b and d are positive rational numbers, a/b is less than c/d provided a*d is less than c*b.
+You should include a function to normalize the values stored so that, after normalization, the denominator are as small as possible.
+For example, after normalization 4/-8 would be represented the same as -1/2.

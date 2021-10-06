@@ -1,0 +1,65 @@
+Define a class named zipCode, that decrypts and encrypts zip code.
+
+Here's encoding rule:
+    For every code, it has 25 binary bit and divides into 5 group.
+    Each group has 5 digits. For each group, There always will be exactly two 1's in each group of digits.
+    Each digit stands for a number. From left to right,the digits encode the values 7, 4, 2, 1, and 0.
+    Multiply the corresponding value with the digit and compute the sum to get the final encoded digit for the zip code. 
+
+The following table shows the encoding for 10100:
+
+Digits:  1 0 1 0 0
+
+Value:   7 4 2 1 0
+
+product: 7 0 2 0 0
+
+zip code digit = 7 + 0 + 2 + 0 + 0 = 9
+
+Repeat this for each group of five digits and concatenate to get the complete zip code.
+There is one special value.
+if Sum of a group of five digits is 11. then this represents the digit 0
+(this is necessary because with two digits per group it is not possible to represents zero).
+
+For example: 10100 10100 01010 11000 01001 deocdes to 99504
+
+Rule:
+
+The class must has two constructors.
+
+The first one should input the zip code as an interger, the second one should input the zip code as a string consisting 0's and 1's as described above.
+
+The class must store the zip code, either in string (10100 ...) or in integer (99504).
+
+The class should have at least two pulic member function, one to return zip code as integer (decrypt) , and another one returns zip code as string(encrypt).
+
+Inputs:
+
+The first line input gives the number of cases n,Then it following a group of input data.
+It contains two line. First one decides to encrypt or to decrypt.
+'e' represents encrypting, 'd' represents decrypting.
+The second line consist data that have to decrypt or encrypt.
+
+Outputs:
+
+The result of encrypting or decrypting.
+
+Example:
+
+Input:
+
+2
+
+e
+
+99504
+
+d
+
+10100 10100 01010 11000 01001
+
+Output:
+
+10100 10100 01010 11000 01001
+
+99504

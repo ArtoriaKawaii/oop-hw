@@ -1,0 +1,35 @@
+ The Babylonian algorithm to compute the square root of a positive number N is as follows:
+
+     1. Make a GUESS at the answer (you can pick N/2 as your initial guess).
+
+     2. Computer R = N / GUESS.
+
+     3. Set GUESS = (GUESS + R) / 2.
+
+     4. Go back to step 2 for as many iterations as necessary. The more steps 2 and 3 are repeated, the closer GUESS wIll become to the square root of N.
+
+
+    Write a program that inputs an integer for N, iterates through the Babylonian algorithm five times, and outputs the answer as an integer.
+
+
+Your answer will be most accurate for small values of N.
+
+
+exmaple:
+
+input:
+
+9
+
+16
+
+25
+
+
+output:
+
+​3
+
+4
+
+5

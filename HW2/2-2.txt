@@ -1,0 +1,28 @@
+Write a program that reads letters and stored in an array, Then it determines how many vowels in the array.
+The output is to be a two-column list.
+The first column is a list of vowels in the English alphabet; the second column is the count of the number of occurrences of each vowel.
+The list should be sorted on the order of ascii code.
+
+You may assume that input are fewer than 50 letters , and input letters may include capital alphabet, space and punctuation.
+
+You MUST use array in this program, or you will get 0.
+
+The problem contains only one input.
+
+example:
+
+input:
+
+Today, I will sleep all day long.
+
+output:
+
+a 3
+
+e 2
+
+i 2
+
+o 2
+
+u 0

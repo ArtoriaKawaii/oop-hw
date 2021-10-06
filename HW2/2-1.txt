@@ -1,0 +1,52 @@
+There are some player scores for a game. A possible sample is shown here where Ronaldo’s best score is 10400, Didier’s best score is 9800, etc
+
+Ronaldo
+
+10400
+
+Didier
+
+9800
+
+Pele
+
+12300
+
+Kaka
+
+8400
+
+Cristiano
+
+8000
+
+Write a function named getHighScore that takes a string reference parameter and an integer reference parameter.
+The function should scan through the input and set the reference parameters to the name of the player with the highest score and the corresponding score.
+
+The program should input the number of the players, followed by the players’ name and their scores.
+Your output are the name and the score of player whose score is the highest, and output ‘-1’ if there is something wrong with input.
+If you don’t answer with the function, you won’t get the score for this homework.
+
+Input_01:
+3↵
+John↵
+10000↵
+Mary↵
+5200↵
+Dolores↵
+8000↵
+↵
+
+Output_01:
+John↵
+10000↵
+
+Input_02:
+-29↵
+John↵
+10000↵
+Mary↵
+5200↵
+
+Output_02:
+-1↵

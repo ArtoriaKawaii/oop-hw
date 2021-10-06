@@ -1,0 +1,56 @@
+Input a directed graph and then output if it has any cycle or not. If the graph has some cycles, output “There is at least one cycle in the graph.”. If the graph doesn’t have any cycle, then output “There isn't any cycle in the graph.”. If there is something wrong with your input, output “Wrong Input”.You must define your own class named “Node” like this:
+
+ 
+
+class Node{
+
+        int number; //The name of the node
+
+    Node* link;
+
+        /*Except above, you can add any other field you like in class “Node”. */
+
+}
+
+ 
+and implement graph with linked list (Hint: You have to implement graph with adjacency list), or you won’t get any score.The input rule is as followed: First, you should input the total number of nodes. Second, input the total number of nodes that are adjacent to the number 1 node. Third, input the node’s number that is adjacent to the number 1 node sequentially. Then set the nodes that are adjacent to the number 2 node in this way and so on.
+
+ 
+
+Example:
+
+
+
+The input will like this:
+
+4  /*There are four nodes.*/
+
+2  /*Node 0 has two children.*/
+
+1  /*Node 1 is adjacent to Node 0.*/
+
+2  /*Node 2 is adjacent to Node 0.*/
+
+1  /*Node 1 has one child.*/
+
+3  /*Node 3 is adjacent to Node 1.*/
+
+1  /*Node 2 has one child.*/
+
+3  /*Node 3 is adjacent to Node 2.*/
+
+0  /*Node 3 doesn’t have any child.*/
+
+ 
+
+Because the graph doesn’t have any cycle, output will be “There isn’t any cycle in the graph.”
+
+
+Hint: Graph (discrete mathematics) (From Wikipedia)
+
+In mathematics, and more specifically in graph theory, a graph is a structure amounting to a set of objects in which some pairs of the objects are in some sense "related". The objects correspond to mathematical abstractions called vertices (also called nodes or points) and each of the related pairs of vertices is called an edge (also called link or line). Typically, a graph is depicted in diagrammatic form as a set of dots or circles for the vertices, joined by lines or curves for the edges. Graphs are one of the objects of study in discrete mathematics.
+
+
+Hint: Cycle (graph theory) (From Wikipedia)
+
+In graph theory, a cycle in a graph is a non-empty trail in which the only repeated vertices are the first and last vertices.
